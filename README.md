@@ -1,7 +1,7 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with .
-[Watch the app](https://aviasales-15ptl9woe-alekcs-projects.vercel.app)
+[Watch the app](https://aviasales-ozi.vercel.app/)
 ## Available Scripts
 
 In the project directory, you can run:
