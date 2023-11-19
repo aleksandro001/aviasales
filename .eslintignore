@@ -1,4 +1,4 @@
 node_modules
 /.idea
 /.git
-/src/dev/
+build

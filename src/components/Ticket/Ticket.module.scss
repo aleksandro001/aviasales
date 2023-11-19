@@ -1,0 +1,40 @@
+.ticket {
+  display: grid;
+  gap: 15px;
+  background-color: white;
+  max-width: 500px;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 8px 4px rgba(150, 155, 159, 0.2);
+}
+
+.price_logo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.price {
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 25px;
+  color: #2196F3;
+}
+
+.logo {
+  margin-left: auto;
+}
+
+.information {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.text {
+  margin-left: 2px;
+}
+
+.gray_text {
+  color: #A0B0B9;
+  margin-bottom: 5px;
+}

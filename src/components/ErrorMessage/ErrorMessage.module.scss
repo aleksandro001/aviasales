@@ -1,0 +1,14 @@
+.error_message {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 15px 10px 15px 60px;
+  color: #D8000C;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-color: white;
+  background-image: url('https://cdn0.iconfinder.com/data/icons/shift-free/32/Error-512.png');
+  background-size: 40px;
+  border-radius: 5px;
+  box-shadow: 0 0 8px 4px rgba(150, 155, 159, 0.2);
+}
