@@ -9,7 +9,6 @@ import Preloader from "../Preloader/Preloader";
 import ErrorMessage from "../ErrorMessage";
 
 import filterTicketsByTransfer from '../../utils/filterTicketsByTransfer';
-import getUniqueKey from "../../utils/getUniqueKey";
 
 import Styles from './TicketList.module.scss';
 import {deleteCookie} from "../../utils/cookies";
@@ -46,7 +45,7 @@ const TicketList = () => {
       {ticketsFilter.length === 0 && !error && isLoaded && <WarningMessage />}
       {
         ticketsFilter.slice(0, ticketsDisplayed).map((ticket) => (
-          <Ticket key={getUniqueKey()} {...ticket} />
+           <Ticket key={ticket.id} {...ticket}  />
         ))
       }
       {ticketsFilter.length > ticketsDisplayed && (

@@ -65,9 +65,9 @@ const Filter = () => {
   };
 
   return (
-    <div className={Styles.filter}>
-      <div className={Styles.title}>КОЛИЧЕСТВО ПЕРЕСАДОК</div>
-      <div className={Styles.wrapper}>
+    <ul className={Styles.filter}>
+      <li className={Styles.title}>КОЛИЧЕСТВО ПЕРЕСАДОК</li>
+      <li className={Styles.wrapper}>
         <input
           type="checkbox"
           id="all"
@@ -77,8 +77,8 @@ const Filter = () => {
           onChange={(event) => handleCheckboxChange(event)}
         />
         <label className={Styles.label} htmlFor="all">Все</label>
-      </div>
-      <div className={Styles.wrapper}>
+      </li>
+      <li className={Styles.wrapper}>
         <input
           type="checkbox"
           id="no_transfers"
@@ -88,8 +88,8 @@ const Filter = () => {
           onChange={(event) => handleCheckboxChange(event)}
         />
         <label className={Styles.label} htmlFor="no_transfers">Без пересадок</label>
-      </div>
-      <div className={Styles.wrapper}>
+      </li>
+      <li className={Styles.wrapper}>
         <input
           type="checkbox"
           id="one_transfer"
@@ -99,8 +99,8 @@ const Filter = () => {
           onChange={(event) => handleCheckboxChange(event)}
         />
         <label className={Styles.label} htmlFor="one_transfer">1 пересадка</label>
-      </div>
-      <div className={Styles.wrapper}>
+      </li>
+      <li className={Styles.wrapper}>
         <input
           type="checkbox"
           id="two_transfers"
@@ -110,8 +110,8 @@ const Filter = () => {
           onChange={(event) => handleCheckboxChange(event)}
         />
         <label className={Styles.label} htmlFor="two_transfers">2 пересадки</label>
-      </div>
-      <div className={Styles.wrapper}>
+      </li>
+      <li className={Styles.wrapper}>
         <input
           type="checkbox"
           id="three_transfers"
@@ -121,8 +121,8 @@ const Filter = () => {
           onChange={(event) => handleCheckboxChange(event)}
         />
         <label className={Styles.label} htmlFor="three_transfers">3 пересадки</label>
-      </div>
-    </div>
+      </li>
+    </ul>
   )
 };
 

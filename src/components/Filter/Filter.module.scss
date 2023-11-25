@@ -19,10 +19,6 @@
   display: none;
 }
 
-.wrapper{
-  padding: 5px 20px
-}
-
 .wrapper:hover {
   background-color: #F1FCFF;
 }
@@ -30,6 +26,7 @@
 .label {
   display: flex;
   align-items: center;
+  padding: 5px 20px
 }
 
 label:before {

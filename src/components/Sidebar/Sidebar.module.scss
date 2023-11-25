@@ -4,3 +4,8 @@
   align-items: flex-start;
   grid-area: sidebar;
 }
+@media (max-width: 400px) {
+  .sidebar{
+  justify-content: center;
+}
+}

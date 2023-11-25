@@ -1,5 +1,6 @@
 /* eslint-disable no-param-reassign */
 import { createAsyncThunk, createSlice, current } from '@reduxjs/toolkit';
+import { nanoid } from 'nanoid';
 
 import getFlyDuration from '../utils/getFlyDuration';
 import { getCookie } from '../utils/cookies';
@@ -13,6 +14,14 @@ export const getSearchIdFromApi = createAsyncThunk('aviasales/getSearchId', asyn
 export const getTicketsFromApi = createAsyncThunk('aviasales/getTickets', async (arg, { rejectWithValue }) =>
   fetch(`https://aviasales-test-api.kata.academy/tickets?searchId=${getCookie('searchId')}`)
     .then(async (response) => (response.ok ? response.json() : { tickets: [], stop: false }))
+    .then(async (response) => {
+       response.tickets.reduce((accumulator, obj) => {
+        obj.id = nanoid(12);
+         accumulator = obj;
+         return accumulator;
+      }, [])
+      return  response
+})
     .catch((error) => rejectWithValue(error.message))
 );
 
